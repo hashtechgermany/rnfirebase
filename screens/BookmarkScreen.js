@@ -1,19 +1,16 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const SettingsScreen = () => {
+const BookmarkScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Settings Screen</Text>
-      <Button
-        title="Click Here"
-        onPress={() => alert('Settings Screen Button Clicked!')}
-      />
+      <Text>Bookmark Screen</Text>
+      <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
     </View>
   );
 };
 
-export default SettingsScreen;
+export default BookmarkScreen;
 
 const styles = StyleSheet.create({
   container: {

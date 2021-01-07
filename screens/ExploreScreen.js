@@ -1,19 +1,19 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const SettingsScreen = () => {
+const ExploreScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Settings Screen</Text>
+      <Text>Explore Screen</Text>
       <Button
         title="Click Here"
-        onPress={() => alert('Settings Screen Button Clicked!')}
+        onPress={() => alert('Explore Screen Button Clicked!')}
       />
     </View>
   );
 };
 
-export default SettingsScreen;
+export default ExploreScreen;
 
 const styles = StyleSheet.create({
   container: {

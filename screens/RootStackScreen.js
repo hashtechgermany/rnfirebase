@@ -1,0 +1,23 @@
+import React from 'react';
+import {View, Text} from 'react-native';
+import {createStackNavigator} from '@react-navigation/stack';
+import SplashScreen from './SplashScreen';
+import SignUpScreen from './SignUpScreen';
+import SignInScreen from './SignInScreen';
+
+const RootStack = createStackNavigator();
+
+const RootStackScreen = ({navigation}) => {
+  return (
+    <RootStack.Navigator headerMode="none">
+      <RootStack.Screen
+        name="SplashScreenSplashScreen"
+        component={SplashScreen}
+      />
+      <RootStack.Screen name="SignInScreen" component={SignInScreen} />
+      <RootStack.Screen name="SignUpScreen" component={SignUpScreen} />
+    </RootStack.Navigator>
+  );
+};
+
+export default RootStackScreen;
